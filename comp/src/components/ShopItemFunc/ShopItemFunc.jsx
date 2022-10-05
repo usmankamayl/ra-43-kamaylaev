@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const ShopItemFunc = ({item}) => {
   return (
@@ -19,4 +20,8 @@ export const ShopItemFunc = ({item}) => {
       </div>
     </div>
   )
+}
+
+ShopItemFunc.protoTypes = {
+    item: PropTypes.object.isRequired,
 }
